@@ -40,10 +40,10 @@ function Form() {
   if (session.status !== "authenticated") return null;
 
   const createTweet = api.tweet.create.useMutation({
-    onSuccess: (newTweet) => {
-      setInputValue("");
-      console.log(newTweet);
-    },
+    // onSuccess: (newTweet) => {
+    //   setInputValue("");
+    //   console.log(newTweet);
+    // },
   });
 
   const submitHandler = (e: FormEvent) => {
